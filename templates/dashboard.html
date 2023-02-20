@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <h1>Bot Dashboard</h1>
+  <h2>List Guild</h2>
+  <ul>
+    {% for guild in GuildList %}
+    <li><a href="/dashboard/{{guild.id}}">{{guild}}</a></li>
+    {% endfor %}
+  </ul>
+
+
+</body>
+
+</html>
